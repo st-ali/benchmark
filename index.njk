@@ -1,26 +1,4 @@
-<!--
----
-layout: layout.njk
----
-<table class="leaderboard leaderboard-list">
-	<caption>Choose a category</caption>
-	<thead data-sr-only>
-		<tr>
-			<th>Category</th>
-			<th>Site Count</th>
-			<th>Last Run Date</th>
-		</tr>
-	</thead>
-	<tbody>
-	{%- for key, category in sites %} 
-		<tr>
-			<td><a href="/{{ (category.name or key) | lower | slug }}/">{{ category.description or category.name or key }}</a></td>
-			<td><span class="count">×{{ category.urls.length }}<span class="leaderboard-hide-sm"> site{% if category.urls.length != 1 %}s{% endif %}</span></span></td>
-			<td class="leaderboard-hide-sm"><span class="small">{{ lastruns[key].timestamp | displayDate | safe }}</span></td>
-		</tr>
-	{%- endfor %}
-	</tbody>
-</table-->
+
 
 <!doctype html>
 <html lang="en">
@@ -48,6 +26,26 @@ layout: layout.njk
 		</p>
 
 		{{ content | safe }}
+
+		<table class="leaderboard leaderboard-list">
+	<caption>Choose a category</caption>
+	<thead data-sr-only>
+		<tr>
+			<th>Category</th>
+			<th>Site Count</th>
+			<th>Last Run Date</th>
+		</tr>
+	</thead>
+	<tbody>
+	{%- for key, category in sites %} 
+		<tr>
+			<td><a href="/{{ (category.name or key) | lower | slug }}/">{{ category.description or category.name or key }}</a></td>
+			<td><span class="count">×{{ category.urls.length }}<span class="leaderboard-hide-sm"> site{% if category.urls.length != 1 %}s{% endif %}</span></span></td>
+			<td class="leaderboard-hide-sm"><span class="small">{{ lastruns[key].timestamp | displayDate | safe }}</span></td>
+		</tr>
+	{%- endfor %}
+	</tbody>
+</table-->
 
 		<footer>
 			MIT licensed. Read <a href="https://www.zachleat.com/web/speedlify/">the blog post</a>. Source code on <a href="https://github.com/zachleat/speedlify/">GitHub</a>. Created by <a href="https://www.zachleat.com/">@zachleat</a>.
