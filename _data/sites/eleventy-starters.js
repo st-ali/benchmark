@@ -1,8 +1,8 @@
 module.exports = {
-	name: "eleventy-starters", // optional, falls back to object key
-	description: "Eleventy Starter Projects",
+	name: "", // optional, falls back to object key
+	description: "standards tests",
 	options: {
-		frequency: 60 * 23, // 23 hours
+		frequency: 60 * 12, // 23 hours
 		// Use "run" if the sites don’t share assets on the same origin
 		//           and we can reset chrome with each run instead of
 		//           each site in every run (it’s faster)
@@ -10,23 +10,13 @@ module.exports = {
 		freshChrome: "run"
 	},
 	urls: [
-		"https://eleventy-base-blog.netlify.app/",
-		"https://hylia.website/",
-		"https://eleventyone.netlify.app/",
-		"https://eleventy-netlify-boilerplate.netlify.app/",
-		"https://skeleventy.netlify.app/",
-		"https://eleventy.ghost.org/",
-		"https://7ty.tech/",
-		"https://xity-starter.netlify.app/",
-		"https://webstarter.chriscollins.me/",
-		"https://pack11ty.dev/",
-		"https://11ty-netlify-jumpstart.netlify.app/",
-		"https://elevenpack.netlify.app/",
-		"https://eleventy-dot-js-blog.netlify.app/",
-		"https://11st-starter-kit.netlify.app/",
-		"https://disjfa.github.io/eleventy-encore/",
-		"https://danfascia.github.io/tai11s/",
-		"https://eleventastic.netlify.app/",
-		"https://supermaya-demo.netlify.app/",
+		"https://stali.com.au/",
+		"https://sensorylab.com.au/",
+		"https://www.salvatoremalatesta.com.au/",
+		"https://www.jbhifi.com.au/",
+		"https://au.koala.com/",
+		"https://www.staples.ca/",
+		"https://www.clare.com/",
+		"https://www.yogagirl.com/",
 	]
 };
