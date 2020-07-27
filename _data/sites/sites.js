@@ -1,6 +1,6 @@
 module.exports = {
 	name: "", // optional, falls back to object key
-	description: "standards tests",
+	description: "ST ALi sites (homepage",
 	options: {
 		frequency: 60 * 12, // 12h
 		// Use "run" if the sites don’t share assets on the same origin
