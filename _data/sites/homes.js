@@ -1,5 +1,5 @@
 module.exports = {
-	name: "ST ALi", // optional, falls back to object key
+	name: "Homepages", // optional, falls back to object key
 	description: "Cha Ching Real-time Website Testing",
 	options: {
 		frequency: 60 * 23, // 24 hours
